@@ -2,18 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>bfeed Home</title>
+<title>bfeed: Home</title>
 
 <style>
 
 html, body, legend, button {
 	font-family: "Helvetica Neue";
 	font-size: 16pt;
+	text-align: center;
 }
 
 fieldset {
 	border: none;
-	background-color: silver;
+	background-color: rgb(180, 200, 200);
 	padding-bottom: 0;
 	margin: 0 0.5em 2em 0.5em;
 	border-radius: 5%;
@@ -24,6 +25,7 @@ legend {
 	font-size: 20pt;
 	padding-top: 40pt;
 	margin-bottom: 0.5em;
+	text-align: left;
 }
 
 button {
@@ -39,21 +41,19 @@ button {
 <body>
 
 <form>
+	<fieldset>
+		<legend>New Post</legend>
 
-<fieldset>
-	<legend>New Post</legend>
+	    <button formaction="new-text-post.html">Text &gt;</button>
 
-    <button onclick="document.location=new-text-post.html">Text &gt;</button>
-	
-	<button>Photo &gt;</button>
-	
-	<button>Video &gt;</button>
-	
-	<button>Audio &gt;</button>
-</fieldset>
+		<button>Photo &gt;</button>
 
-<button>Old Posts &gt;</button>
+		<button>Video &gt;</button>
 
+		<button>Audio &gt;</button>
+	</fieldset>
+
+	<button>Old Posts &gt;</button>
 </form>
 
 </body>
