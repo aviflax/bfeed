@@ -60,15 +60,31 @@ textarea {
 
 <form>
 
-<h1><button formaction="home.html">&lt;</button>New Text Post</h1>
+<h1><button formaction="home.html">&lt;</button>New Prose Post</h1>
 
 <textarea></textarea>
 
 <input type="text" placeholder="title (optional)">
 
-<input type="checkbox"><label>Tweet</label>
+<label>Publicize:
+  <select multiple="true">
+    <option>Tweet title with link
+    <option>Tweet title, first image, and link
+  </select>
+</label>
 
-<button>Publish</button>
+<fieldset>
+  <legend>Publishing</legend>
+  <label>When?
+    <select>
+	  <option selected>Add to drip queue
+	  <option>Specific date/time
+	  <option>Immediately
+	</select>
+  </label>
+  <button>Publish</button>
+</fieldset>
+
 <button>Save Draft</button>
 
 </form>
