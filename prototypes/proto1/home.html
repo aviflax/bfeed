@@ -12,12 +12,19 @@ html, body, legend, button {
 	text-align: center;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+}
+
 fieldset {
 	border: none;
 	background-color: rgb(180, 200, 200);
 	padding-bottom: 0;
 	margin: 0 0.5em 2em 0.5em;
 	border-radius: 5%;
+  max-width: 13em;
 }
 
 legend {
@@ -28,9 +35,15 @@ legend {
 	text-align: left;
 }
 
+legend:after {
+  content: ":";
+}
+
 button {
 	display: block;
+  text-align: left;
 	width: 90%;
+  max-width: 12em;
 	margin: 0 1em 1em 1em;
 }
 
@@ -39,6 +52,8 @@ button {
 </head>
 
 <body>
+
+<h1>bfeed : aviflax.com</h1>
 
 <form>
 	<fieldset>
@@ -50,14 +65,16 @@ button {
     
     <button>Photo &gt;</button>
 
-    <button>Video &gt;</button>
+    <button disabled>Video &gt;</button>
 
-    <button>Audio &gt;</button>
+    <button disabled>Audio &gt;</button>
 	</fieldset>
 
   <button>3 Pending Posts &gt;</button>
   
-	<button>Old Posts &gt;</button>
+  <button>2 Draft Posts &gt;</button>
+  
+	<button>4,321 Old Posts &gt;</button>
 </form>
 
 </body>

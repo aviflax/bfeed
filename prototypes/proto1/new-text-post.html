@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
-<title>bfeed: New Text Post</title>
+
+<title>bfeed: New Prose Post</title>
 
 <style>
 
@@ -10,6 +11,19 @@ html, body, legend, button {
 	font-family: "Helvetica Neue";
 	font-size: 16pt;
 	text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 fieldset {
@@ -33,13 +47,11 @@ button {
 	margin: 0 1em 1em 1em;
 }
 
-h1 {
-	font-size: 18pt;
-}
-
-h1 > button {
+button.back {
 	display: inline;
-	width: unset;
+	width: unset;  
+  margin: 0;
+  padding: 0;
 }
 
 textarea, input[type=text] {
@@ -52,36 +64,51 @@ textarea {
 	border-radius: 0;
 }
 
+label {
+  display: block;
+  text-align: left;
+  font-size: 12pt;
+}
+
 </style>
 
 </head>
 
-<body>
+<body lang="en-US">
+
+<h1>bfeed : aviflax.com</h1>
+
+<h2>
+  <button class="back" formaction="home.html">&lt;</button>
+  New Prose Post
+</h2>
 
 <form>
-
-<h1><button formaction="home.html">&lt;</button>New Prose Post</h1>
 
 <textarea></textarea>
 
 <input type="text" placeholder="title (optional)">
 
-<label>Publicize:
-  <select multiple="true">
-    <option>Tweet title with link
-    <option>Tweet title, first image, and link
-  </select>
-</label>
-
 <fieldset>
   <legend>Publishing</legend>
-  <label>When?
-    <select>
-	  <option selected>Add to drip queue
-	  <option>Specific date/time
-	  <option>Immediately
-	</select>
-  </label>
+
+  <fieldset>
+    <label>When?
+      <select>
+        <option disabled>Add to drip queue
+        <option selected>Immediately
+        <option disabled>Specific date/time
+      </select>
+    </label>
+
+    <label>Publicize?
+      <select>
+        <option selected>No
+        <option disabled>Tweet title + link
+      </select>
+    </label>
+  </fieldset>
+
   <button>Publish</button>
 </fieldset>
 
