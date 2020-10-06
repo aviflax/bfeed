@@ -7,44 +7,44 @@
 <style>
 
 html, body, legend, button {
-	font-family: "Helvetica Neue";
-	font-size: 16pt;
-	text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: 16pt;
+    text-align: center;
 }
 
 h1 {
-  margin: 0;
-  padding: 0;
-  font-size: xx-large;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
 }
 
 fieldset {
-	border: none;
-	background-color: rgb(180, 200, 200);
-	padding-bottom: 0;
-	margin: 0 0.5em 2em 0.5em;
-	border-radius: 5%;
-  max-width: 13em;
+    border: none;
+    background-color: rgb(180, 200, 200);
+    padding-bottom: 0;
+    margin: 0 0.5em 2em 0.5em;
+    border-radius: 5%;
+    max-width: 13em;
 }
 
 legend {
-	font-weight: bold;
-	font-size: 20pt;
-	padding-top: 40pt;
-	margin-bottom: 0.5em;
-	text-align: left;
+    font-weight: bold;
+    font-size: 20pt;
+    padding-top: 40pt;
+    margin-bottom: 0.5em;
+    text-align: left;
 }
 
 legend:after {
-  content: ":";
+    content: ":";
 }
 
 button {
-	display: block;
-  text-align: left;
-	width: 90%;
-  max-width: 12em;
-	margin: 0 1em 1em 1em;
+    display: block;
+    text-align: left;
+    width: 90%;
+    max-width: 12em;
+    margin: 0 1em 1em 1em;
 }
 
 </style>
@@ -56,25 +56,25 @@ button {
 <h1>bfeed : aviflax.com</h1>
 
 <form>
-	<fieldset>
-    <legend>New Post</legend>
+    <fieldset>
+        <legend>New Post</legend>
+        
+        <button formaction="new-text-post.html">Prose &gt;</button>
+        
+        <button>Microprose &gt;</button>
+        
+        <button>Photo &gt;</button>
+        
+        <button disabled>Video &gt;</button>
+        
+        <button disabled>Audio &gt;</button>
+    </fieldset>
 
-    <button formaction="new-text-post.html">Prose &gt;</button>
-
-    <button>Microprose &gt;</button>
+    <button>3 Pending Posts &gt;</button>
     
-    <button>Photo &gt;</button>
-
-    <button disabled>Video &gt;</button>
-
-    <button disabled>Audio &gt;</button>
-	</fieldset>
-
-  <button>3 Pending Posts &gt;</button>
-  
-  <button>2 Draft Posts &gt;</button>
-  
-	<button>4,321 Old Posts &gt;</button>
+    <button>2 Draft Posts &gt;</button>
+    
+    <button>4,321 Old Posts &gt;</button>
 </form>
 
 </body>
